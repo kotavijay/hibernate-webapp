@@ -1,7 +1,5 @@
 package com.hibernate.sample.webapp.model;
 
-import org.hibernate.annotations.GeneratorType;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
