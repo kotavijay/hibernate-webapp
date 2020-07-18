@@ -20,8 +20,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(Long id, String name) {
-        this.id = id;
+    public Employee(String name) {
         this.name = name;
     }
 

@@ -17,8 +17,8 @@ public class ContractEmployee extends Employee {
     public ContractEmployee() {
     }
 
-    public ContractEmployee(Long id, String name, double payPerHour, String duration) {
-        super(id, name);
+    public ContractEmployee(String name, double payPerHour, String duration) {
+        super(name);
         this.payPerHour = payPerHour;
         this.duration = duration;
     }
