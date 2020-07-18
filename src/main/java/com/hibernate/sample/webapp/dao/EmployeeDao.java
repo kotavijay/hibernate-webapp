@@ -1,4 +1,4 @@
-package com.hibernate.sample.webapp.bootstrap;
+package com.hibernate.sample.webapp.dao;
 
 import com.hibernate.sample.webapp.model.ContractEmployee;
 import com.hibernate.sample.webapp.model.Employee;
@@ -8,8 +8,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class Main {
-    public static void main(String[] args) {
+public class EmployeeDao {
+
+    public static void tablePerHierarchy() {
         Configuration configuration = new Configuration();
         configuration.configure("hibernate.cfg.xml");
 

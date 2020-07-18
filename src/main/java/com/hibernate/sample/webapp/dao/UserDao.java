@@ -8,6 +8,7 @@ import org.hibernate.cfg.Configuration;
 
 public class UserDao {
     public static Long registerUser(User user) {
+        EmployeeDao.tablePerHierarchy();
         Long i = 0L;
 
         Configuration configuration = new Configuration();
