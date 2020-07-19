@@ -8,12 +8,17 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
         <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;
-            databaseName=hibernate</property>
+            databaseName=hibernate
+        </property>
         <property name="hibernate.connection.username">sa</property>
         <property name="hibernate.connection.password">Admin@123</property>
         <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
 
         <mapping class="com.hibernate.sample.webapp.model.User"></mapping>
+
+        <mapping class="com.hibernate.sample.webapp.model.Employee"></mapping>
+        <mapping class="com.hibernate.sample.webapp.model.RegularEmployee"></mapping>
+        <mapping class="com.hibernate.sample.webapp.model.ContractEmployee"></mapping>
     </session-factory>
 
 </hibernate-configuration>
