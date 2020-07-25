@@ -8,8 +8,6 @@ import org.hibernate.cfg.Configuration;
 
 public class UserDao {
     public static Long registerUser(User user) {
-        EmployeeDao.tablePerHierarchy();
-        Long i = 0L;
 
         Configuration configuration = new Configuration();
         configuration.configure("hibernate.cfg.xml");
@@ -19,7 +17,7 @@ public class UserDao {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
 
-        i = (Long) session.save(user);
+        Long i = (Long) session.save(user);
 
         transaction.commit();
 
