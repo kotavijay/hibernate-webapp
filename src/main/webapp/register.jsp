@@ -15,8 +15,8 @@
 <jsp:useBean id="user" class="com.hibernate.sample.webapp.model.User"></jsp:useBean>
 <jsp:setProperty name="user" property="*"></jsp:setProperty>
 <%
-    Long i=UserDao.registerUser(user);
-    if(i>0) {
+    Long i = UserDao.registerUser(user);
+    if (i > 0) {
         System.out.println("Successfully registered.");
     }
 %>
